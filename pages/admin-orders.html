@@ -1,0 +1,190 @@
+<!-- Admin Layout - Orders -->
+<div class="admin-layout">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-brand">
+            <h2>Digital Atelier</h2>
+            <span class="admin-badge">Admin</span>
+        </div>
+        
+        <nav class="admin-nav">
+            <a href="#admin" class="admin-link">
+                <span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+            <a href="#admin-products" class="admin-link">
+                <span class="material-symbols-outlined">inventory_2</span>
+                Products
+            </a>
+            <a href="#admin-orders" class="admin-link active">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                Orders
+            </a>
+            <a href="#" class="admin-link">
+                <span class="material-symbols-outlined">group</span>
+                Customers
+            </a>
+        </nav>
+        
+        <div class="admin-user">
+            <div class="user-avatar"><span class="material-symbols-outlined">person</span></div>
+            <div class="user-info">
+                <strong>Admin User</strong>
+                <span>atelier.admin@digital.com</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Admin Content Area -->
+    <main class="admin-content">
+        <header class="admin-page-header">
+            <div class="search-bar-sm">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="Search orders, customers..." />
+            </div>
+            <div class="admin-header-actions">
+                <button class="icon-btn-sm"><span class="material-symbols-outlined">notifications</span></button>
+                <button class="icon-btn-sm"><span class="material-symbols-outlined">apps</span></button>
+            </div>
+        </header>
+
+        <section class="admin-page-title-row">
+            <div class="admin-page-title">
+                <h1>Orders Management</h1>
+                <p>Review and manage your global sales activity from the last 30 days.</p>
+            </div>
+            <button class="btn-export">
+                <span class="material-symbols-outlined icon">file_download</span> Export CSV
+            </button>
+        </section>
+
+        <!-- Filter Shell -->
+        <div class="filter-shell">
+            <div class="filter-tabs">
+                <button class="filter-tab active">All Orders</button>
+                <button class="filter-tab">Pending</button>
+                <button class="filter-tab">Processing</button>
+                <button class="filter-tab">Shipped</button>
+                <button class="filter-tab">Delivered</button>
+            </div>
+            <div class="filter-select-wrapper">
+                <select class="filter-select">
+                    <option>Status: All Payments</option>
+                    <option>Paid</option>
+                    <option>Pending</option>
+                    <option>Refunded</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Orders Table -->
+        <div class="admin-table-container">
+            <div class="admin-table-overflow">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                            <th>Payment</th>
+                            <th>Fulfillment</th>
+                            <th class="align-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-id">#ORD-88219</td>
+                            <td>
+                                <div class="table-customer">
+                                    <div class="avatar-sm avatar-sm--primary">ED</div>
+                                    <div class="table-customer__info">
+                                        <strong>Elena Dubois</strong>
+                                        <span>elena@example.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="table-date">Oct 24, 2023</td>
+                            <td class="table-price">$1,240.00</td>
+                            <td><span class="status-badge status-badge--success">Paid</span></td>
+                            <td><span class="status-badge status-badge--info">Shipped</span></td>
+                            <td class="align-right">
+                                <button class="icon-btn-sm"><span class="material-symbols-outlined">more_vert</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-id">#ORD-88220</td>
+                            <td>
+                                <div class="table-customer">
+                                    <div class="avatar-sm avatar-sm--secondary">JH</div>
+                                    <div class="table-customer__info">
+                                        <strong>Julian Hannes</strong>
+                                        <span>j.hannes@webmail.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="table-date">Oct 24, 2023</td>
+                            <td class="table-price">$450.00</td>
+                            <td><span class="status-badge status-badge--warning">Pending</span></td>
+                            <td><span class="status-badge status-badge--default">Processing</span></td>
+                            <td class="align-right">
+                                <button class="icon-btn-sm"><span class="material-symbols-outlined">more_vert</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-id">#ORD-88221</td>
+                            <td>
+                                <div class="table-customer">
+                                    <div class="avatar-sm avatar-sm--tertiary">ML</div>
+                                    <div class="table-customer__info">
+                                        <strong>Marcus Low</strong>
+                                        <span>marcus.l@atelier.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="table-date">Oct 23, 2023</td>
+                            <td class="table-price">$2,890.50</td>
+                            <td><span class="status-badge status-badge--success">Paid</span></td>
+                            <td><span class="status-badge status-badge--success">Delivered</span></td>
+                            <td class="align-right">
+                                <button class="icon-btn-sm"><span class="material-symbols-outlined">more_vert</span></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-footer">
+                <p>Showing <strong>1-3</strong> of <strong>2,480</strong> orders</p>
+                <div class="table-pagination">
+                    <button class="icon-btn-sm border"><span class="material-symbols-outlined">chevron_left</span></button>
+                    <button class="icon-btn-sm active">1</button>
+                    <button class="icon-btn-sm border"><span class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Insight Card -->
+        <div class="insight-grid">
+            <div class="insight-card primary-insight">
+                <div class="insight-card__decor"></div>
+                <div class="insight-card__content">
+                    <h3>Holiday Rush Preparation</h3>
+                    <p>Based on current fulfillment trends, we recommend increasing shipping capacity by 15% for the upcoming weekend. 84 orders are currently in the queue for premium gift wrapping.</p>
+                    <button class="insight-btn">View Fulfillment Plan</button>
+                </div>
+            </div>
+            <div class="insight-card secondary-insight">
+                <div class="insight-card__top">
+                    <span class="material-symbols-outlined insight-icon">analytics</span>
+                    <h3>Avg. Fulfillment Time</h3>
+                    <p class="insight-value">1.2 <span>days</span></p>
+                </div>
+                <div class="insight-card__bottom">
+                    <p class="insight-trend positive">
+                        <span class="material-symbols-outlined">trending_up</span> 8% faster than last month
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

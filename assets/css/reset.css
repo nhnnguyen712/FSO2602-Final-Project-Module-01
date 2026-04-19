@@ -1,0 +1,85 @@
+/* 1. Reset Box Model - Quan trọng nhất để tính width/height chuẩn */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Reset Body - Loại bỏ khoảng trắng thừa và mượt font chữ */
+/* body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+} */
+
+/* 3. Reset các thẻ văn bản - Tránh việc H1, H2 làm vỡ layout */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+/* 4. Reset Danh sách - Bỏ dấu chấm đầu dòng mặc định */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 5. Reset Thẻ A - Bỏ gạch chân và màu xanh tím */
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* 6. Reset Thẻ Button & Input - Bỏ khung viền và màu xám mặc định */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 7. Reset Hình ảnh - Đảm bảo ảnh luôn co dãn theo khung chứa */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. Reset Bảng (Nếu bạn có dùng table) */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Reset (Tùy chỉnh thêm nếu cần)  */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

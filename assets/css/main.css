@@ -1,0 +1,68 @@
+/* CSS CUSTOM PROPERTIES (DESIGN TOKENS) */
+:root {
+  /* Colors - Light Theme based on tailwind config */
+  --surface-bright: #fcf9f8;
+  --on-background: #1c1b1b;
+  --surface-tint: #575f6d;
+  --on-primary: #ffffff;
+  --on-surface-variant: #45474c;
+  --surface-container-low: #f6f3f2;
+  --inverse-on-surface: #f3f0ef;
+  --on-primary-container: #808897;
+  --surface-variant: #e5e2e1;
+  --on-error: #ffffff;
+  --outline: #76777c;
+  --surface-container-lowest: #ffffff;
+  --surface-container: #f0edec;
+  --background: #fcf9f8;
+  --error: #ba1a1a;
+  --primary: #020813;
+  --surface: #fcf9f8;
+  --on-secondary-container: #785a1a;
+  --on-secondary: #ffffff;
+  --on-surface: #1c1b1b;
+  --secondary: #775a19;
+  --surface-container-highest: #e5e2e1;
+
+  /* Typography */
+  --font-headline: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Layout */
+  --max-width: 1440px;
+  --container-px: 1rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.02);
+  --shadow-xl: 0 20px 40px rgba(0,0,0,0.06);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-px: 2rem;
+  }
+}
+
+/* Global Dark Mode mapping if needed */
+.dark {
+  --surface: #020813;
+  --on-surface: #ffffff;
+  --background: #020813;
+  --on-background: #ffffff;
+  --surface-container-low: #18202c;
+  --outline: #45474c;
+}

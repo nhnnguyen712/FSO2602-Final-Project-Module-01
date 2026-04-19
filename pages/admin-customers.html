@@ -1,0 +1,211 @@
+<!-- Admin Layout - Customers -->
+<div class="admin-layout">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <a href="#home" class="admin-brand">
+            <h2>Digital Atelier</h2>
+            <span class="admin-badge">Admin</span>
+        </a>
+        
+        <nav class="admin-nav">
+            <a href="#admin" class="admin-link">
+                <span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+            <a href="#admin-products" class="admin-link">
+                <span class="material-symbols-outlined">inventory_2</span>
+                Products
+            </a>
+            <a href="#admin-orders" class="admin-link">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                Orders
+            </a>
+            <a href="#admin-customers" class="admin-link active">
+                <span class="material-symbols-outlined">group</span>
+                Customers
+            </a>
+        </nav>
+        
+        <div class="admin-user">
+            <div class="user-avatar"><span class="material-symbols-outlined">person</span></div>
+            <div class="user-info">
+                <strong>Admin User</strong>
+                <span>atelier.admin@digital.com</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Admin Content Area -->
+    <main class="admin-content">
+        <header class="admin-header flex justify-between items-center">
+            <div class="flex items-center" style="gap: 1rem">
+                <button class="icon-btn-sm menu-toggle" id="admin-sidebar-open" style="display: flex; background: var(--surface-container-highest)">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div>
+                    <h1>Customer Management</h1>
+                    <p>Building relationships with our elite connoisseurs.</p>
+                </div>
+            </div>
+            <div class="admin-actions flex" style="gap: 1rem">
+                <button class="btn-secondary" style="border-color: var(--outline-variant); color: var(--on-surface); padding: 0.5rem 1rem;">
+                    <span class="material-symbols-outlined" style="vertical-align: -4px; margin-right: 4px">download</span> Export CSV
+                </button>
+                <button class="btn-primary flex items-center" style="gap: 0.25rem; padding: 0.5rem 1rem">
+                    <span class="material-symbols-outlined">person_add</span> Add Customer
+                </button>
+            </div>
+        </header>
+
+        <!-- Customer Metrics -->
+        <section class="admin-metrics grid">
+            <div class="metric-card">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="metric-label">Total Customers</p>
+                        <h3 class="metric-value">8,492</h3>
+                    </div>
+                    <span class="material-symbols-outlined metric-icon" style="color: var(--secondary); background: rgba(119, 90, 25, 0.1)">group</span>
+                </div>
+                <div class="fake-chart flex items-end">
+                    <div style="height: 40%"></div>
+                    <div style="height: 60%"></div>
+                    <div class="active" style="height: 70%"></div>
+                    <span class="trend trend-up">+5.2%</span>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="metric-label">Active This Month</p>
+                        <h3 class="metric-value">2,104</h3>
+                    </div>
+                    <span class="material-symbols-outlined metric-icon" style="color: var(--primary); background: var(--primary-container)">bolt</span>
+                </div>
+                <div class="fake-chart flex items-end">
+                    <div style="height: 50%"></div>
+                    <div class="active" style="height: 80%"></div>
+                    <span class="trend trend-up">+12%</span>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="metric-label">Premium Members</p>
+                        <h3 class="metric-value">1,240</h3>
+                    </div>
+                    <span class="material-symbols-outlined metric-icon" style="color: #785a1a; background: #fecdd3">verified</span>
+                </div>
+                <div class="fake-chart flex items-end">
+                    <div style="height: 30%"></div>
+                    <div class="active" style="height: 50%"></div>
+                    <span class="trend trend-up">+24%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Table -->
+        <section class="admin-table-container">
+            <div class="table-header flex justify-between items-center">
+                <h2>All Customers</h2>
+                <div class="search-bar-sm relative">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="Search by name or email..." />
+                </div>
+            </div>
+
+            <table class="admin-table w-full">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Total Spent</th>
+                        <th>Last Order</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="table-product">
+                                <div class="table-product__img" style="border-radius: 50%; background: var(--secondary-fixed); display: flex; align-items: center; justify-content: center; color: #fff;">
+                                    AS
+                                </div>
+                                <div class="table-product__info">
+                                    <strong>Alexander Sterling</strong>
+                                    <span>a.sterling@atelier.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status-badge status-badge--success">VIP Member</span></td>
+                        <td class="table-price">$12,450.00</td>
+                        <td>Oct 12, 2026</td>
+                        <td>
+                            <button class="icon-btn-sm"><span class="material-symbols-outlined">mail</span></button>
+                            <button class="icon-btn-sm"><span class="material-symbols-outlined">edit</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table-product">
+                                <div class="table-product__img" style="border-radius: 50%; background: var(--primary-container); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                                    EV
+                                </div>
+                                <div class="table-product__info">
+                                    <strong>Elena Vance</strong>
+                                    <span>vance.elena@minimal.io</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status-badge status-badge--info">Active</span></td>
+                        <td class="table-price">$3,200.00</td>
+                        <td>Sept 28, 2026</td>
+                        <td>
+                            <button class="icon-btn-sm"><span class="material-symbols-outlined">mail</span></button>
+                            <button class="icon-btn-sm"><span class="material-symbols-outlined">edit</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table-product">
+                                <div class="table-product__img" style="border-radius: 50%; background: var(--surface-container-highest); display: flex; align-items: center; justify-content: center; color: var(--on-surface);">
+                                    JW
+                                </div>
+                                <div class="table-product__info">
+                                    <strong>Julian Ward</strong>
+                                    <span>j.ward@connoisseur.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status-badge status-badge--warning">Inactive</span></td>
+                        <td class="table-price">$850.00</td>
+                        <td>July 15, 2026</td>
+                        <td>
+                            <button class="icon-btn-sm"><span class="material-symbols-outlined">mail</span></button>
+                            <button class="icon-btn-sm"><span class="material-symbols-outlined">edit</span></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="table-footer">
+                <button class="view-all-table">View All 8,492 Customers</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        (function() {
+            const sidebar = document.querySelector('.admin-sidebar');
+            const openBtn = document.getElementById('admin-sidebar-open');
+            if(openBtn && sidebar) {
+                openBtn.addEventListener('click', () => sidebar.classList.add('open'));
+                document.addEventListener('click', (e) => {
+                    if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && !openBtn.contains(e.target)) {
+                        sidebar.classList.remove('open');
+                    }
+                });
+            }
+        })();
+    </script>
+</div>

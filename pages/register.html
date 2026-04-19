@@ -1,0 +1,86 @@
+<!-- Auth Layout - Register -->
+<div class="auth-layout">
+    <!-- Left Column: Visual Brand Storytelling -->
+    <section class="auth-visual font-headline">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWGQmfP1P6lq5Tsf9BydYyu7kr5lvba4cTP3HLtqk5w_O1BVRHTMOUtnwbUE8sL0t8pJiFuhW6l344wOuD-OSGJRZ23o689Zxv2g5BEHEO2TkKu8nMcMR_PXqd1ku84-aRhXu8AaSmttScgDOvUqMWXzk5FDKkzyW0glxYUg_oaYe1C73DRHKI5MfHAG91ysCrc25GblOd8muuM2E76_Q5sPzv8u5cS6ZzX-SpFAFOSaQQom5xXcP71Ia0olE5ROA0vShb6H9A3mbW" alt="Luxury minimalist interior" />
+        <div class="auth-visual-content">
+            <div class="auth-visual-brand">
+                <h1>Digital Atelier</h1>
+            </div>
+            <div class="auth-visual-text">
+                <p class="auth-quote">"True elegance is the beauty of a quiet presence."</p>
+                <p class="auth-sub">Curated selections for the modern connoisseur.</p>
+            </div>
+            <div class="auth-footer-tag">
+                <span>EST. MMXXIV</span>
+                <span>Crafted Excellence</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Right Column: Form Area -->
+    <section class="auth-form-area flex-center">
+        <div class="auth-form-wrapper">
+            <!-- Mobile Brand -->
+            <div class="mobile-brand">
+                <h2>Digital Atelier</h2>
+            </div>
+            
+            <header class="auth-header">
+                <h2>Create your profile</h2>
+                <p>Join our curated community of design enthusiasts and access exclusive collections.</p>
+            </header>
+            
+            <nav class="auth-toggle">
+                <button onclick="window.location.hash='#login'" class="auth-tab">Login</button>
+                <button onclick="window.location.hash='#register'" class="auth-tab active">Sign Up</button>
+            </nav>
+            
+            <form class="auth-form" onsubmit="window.location.hash='#dashboard'; return false;">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Evelyn Harper" class="input-light" />
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="evelyn@atelier.com" class="input-light" />
+                </div>
+                
+                <div class="form-group relative-group">
+                    <div class="form-label-row">
+                        <label>Password</label>
+                        <span class="label-hint">Minimum 8 characters</span>
+                    </div>
+                    <div class="input-with-icon">
+                        <input type="password" placeholder="••••••••" class="input-light" />
+                        <button type="button" class="icon-btn absolute-right"><span class="material-symbols-outlined">visibility</span></button>
+                    </div>
+                </div>
+                
+                <div class="form-check">
+                    <input type="checkbox" id="terms" class="custom-checkbox-auth" />
+                    <label for="terms" class="check-label">
+                        I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a>.
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-primary auth-submit-btn">
+                    Sign Up
+                </button>
+            </form>
+            
+            <div class="auth-social">
+                <p>Already have an account? <a href="#login" class="auth-link auth-link--strong">Sign In</a></p>
+            </div>
+
+            <div class="auth-footer">
+                <span>© 2024 THE ATELIER</span>
+                <div class="auth-footer-links">
+                    <a href="#">Support</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

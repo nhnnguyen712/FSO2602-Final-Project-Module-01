@@ -1,0 +1,184 @@
+<!-- Dashboard Layout -->
+<div class="dashboard-layout pt-main">
+  <!-- Side Nav Bar -->
+  <aside class="dashboard-sidebar">
+    <div class="sidebar-header">
+      <h2>Welcome back</h2>
+      <p>Manage your atelier profile</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#dashboard" class="sidebar-link active">
+        <span class="material-symbols-outlined">person</span>
+        Account Overview
+      </a>
+      <a href="#my-orders" class="sidebar-link">
+        <span class="material-symbols-outlined">package_2</span>
+        My Orders
+      </a>
+      <a href="#payment-methods" class="sidebar-link">
+        <span class="material-symbols-outlined">payments</span>
+        Payment Methods
+      </a>
+      <a href="#account-security" class="sidebar-link">
+        <span class="material-symbols-outlined">shield</span>
+        Security
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="dashboard-content">
+    <div class="dashboard-content-inner">
+      <header class="dashboard-header flex justify-between items-end">
+        <div>
+          <h1>Account Overview</h1>
+          <p>Detailed information regarding your curated profile.</p>
+        </div>
+        <button
+          class="btn-primary flex items-center"
+          style="gap: 0.5rem; padding: 0.75rem 1.5rem"
+        >
+          <span class="material-symbols-outlined">edit</span>
+          Edit Profile
+        </button>
+      </header>
+
+      <div class="bento-grid-dashboard">
+        <!-- Profile Card -->
+        <div class="profile-card">
+          <div class="profile-avatar-wrapper">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-MDuGYhGl_5vG9LHtmnTmio4SLmlThUdFlOJwD5l8Z1dWusdR-j4Zsh4FoYcARAMxkFPT_cpVtn4NYzmIRDM1fpTFiWsW8F5tX9dof9pIs_5CEiki_cncarHbORuC4WRv8fraEC0gfnHtT1ySLIAHkbp90YEKazAoBfVopxeBJ4Fr_hoOLTst16uzbwm4SjtNoLkYECOE2RzbdJwXwaWiNpqXNT-bFJ1uEBZ1ZRd85a3lLxUMaBKcgtCG2igMXRigXguIfwGS7qXr"
+              alt="Profile"
+              class="profile-avatar"
+            />
+            <div class="verified-badge">
+              <span class="material-symbols-outlined">verified</span>
+            </div>
+          </div>
+
+          <div class="profile-details">
+            <h3>Alexander Sterling</h3>
+            <p class="member-tier">Elite Member</p>
+
+            <div class="details-grid">
+              <div class="detail-item">
+                <span>Email</span>
+                <strong>a.sterling@atelier.com</strong>
+              </div>
+              <div class="detail-item">
+                <span>Location</span>
+                <strong>London, United Kingdom</strong>
+              </div>
+              <div class="detail-item">
+                <span>Joined</span>
+                <strong>January 2023</strong>
+              </div>
+              <div class="detail-item">
+                <span>Phone</span>
+                <strong>+44 7700 900077</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membership Card -->
+        <div class="membership-card">
+          <div class="membership-bg-blur"></div>
+          <div class="relative-z10">
+            <h4>Atelier Gold</h4>
+            <p>Exclusive Curator Benefits</p>
+          </div>
+          <div class="relative-z10 credits-container">
+            <div class="flex items-baseline" style="gap: 0.25rem">
+              <span class="credits-count">12,450</span>
+              <span class="credits-label">Credits</span>
+            </div>
+            <p
+              style="
+                font-size: 0.65rem;
+                color: rgba(255, 255, 255, 0.7);
+                margin-top: 0.5rem;
+              "
+            >
+              Next tier: Platinum at 15k
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Orders Section -->
+      <section class="recent-orders">
+        <div class="header-row">
+          <h2>Recent Orders</h2>
+          <a href="#" class="view-all-link"
+            >View All Orders
+            <span class="material-symbols-outlined">arrow_forward</span></a
+          >
+        </div>
+
+        <div class="orders-list">
+          <!-- Order 1 -->
+          <div class="order-row">
+            <div class="order-item-info">
+              <div class="order-img">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfROWdGZqnFumqqZ_dRJZ4uWt1dy7_HyCjZk8u7eQugo3bGQ8JUluU5-uF-lxOLyigXklDJxiwlCTUY8JkXhCHGjo27rE2d5cEbO0pBu2yvt5KHcYOy0Mf90cnTNJ8HIaMg4KgxKA434EGZ3SemZMOtAOnTnYn818cDVTL-tyavReptNEt-7bXwBIcFV42J7FI3do9zhMc53yEu5wS1qanPx8cXoYO0Eabr5Pzov-62RDLtWdi2bwAMFLWR9lWvwWJSdES9IeUfG4C"
+                />
+              </div>
+              <div>
+                <h4>Monochrome Essence Timepiece</h4>
+                <p>Order #AT-88293 &bull; Delivered Oct 12</p>
+              </div>
+            </div>
+            <div class="order-status-right">
+              <strong>&pound;2,450.00</strong>
+              <span class="status-badge status-shipped">Shipped</span>
+            </div>
+          </div>
+
+          <!-- Order 2 -->
+          <div class="order-row">
+            <div class="order-item-info">
+              <div class="order-img">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1sf5nLtJUrY3rDTvuqwKCAJK-v67-BNPWpZCU0fclrxHNbcY7DJf3lVoiRDvfa5QgQ4djFH37x8rDq1CZfsh35kH5ClKDpkL6wZQNxB0np6W0XSMxs9WN25rg0D3b5Yy92_I1b9MkRd4YZq125hZke4sYH22dnNLwKKD3NbwS6h-ph5CyRnmDVAromxlzIDj67h1pQSomw4pi56dhwyCSQ8kzJsUohHdRwavwgP3RK9KxfMePM-tQxGTWLEYzgP5Xl2lMNxljR0A3"
+                />
+              </div>
+              <div>
+                <h4>Hand-Woven Linen Collection</h4>
+                <p>Order #AT-88104 &bull; Delivered Sept 28</p>
+              </div>
+            </div>
+            <div class="order-status-right">
+              <strong>&pound;890.00</strong>
+              <span class="status-badge status-closed">Closed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Actions -->
+      <section class="quick-actions">
+        <div class="action-card action-bg-secondary">
+          <div>
+            <h5>Join the Inner Circle</h5>
+            <p>
+              Early access to limited releases and bespoke tailoring sessions.
+            </p>
+          </div>
+          <span class="material-symbols-outlined icon-large">auto_awesome</span>
+        </div>
+
+        <div class="action-card action-bg-primary">
+          <div>
+            <h5>Invite a Connoisseur</h5>
+            <p>Share the Atelier experience and earn shop credits.</p>
+          </div>
+          <span class="material-symbols-outlined icon-large">card_giftcard</span>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,11 @@
+{
+  "name": "digital-atelier-spa",
+  "version": "1.0.0",
+  "description": "Digital Atelier Single Page Application",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "author": "",
+  "license": "ISC"
+}

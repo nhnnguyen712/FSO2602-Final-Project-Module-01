@@ -1,0 +1,302 @@
+<!-- Admin Layout -->
+<div class="admin-layout">
+  <!-- Admin Sidebar -->
+  <aside class="admin-sidebar md-flex">
+    <a href="index.html" class="admin-brand">
+      <h2>Digital Atelier</h2>
+      <span class="admin-badge">Admin</span>
+    </a>
+
+    <nav class="admin-nav">
+      <a href="#admin" class="admin-link active">
+        <span class="material-symbols-outlined">dashboard</span>
+        Dashboard
+      </a>
+      <a href="#admin-products" class="admin-link">
+        <span class="material-symbols-outlined">inventory_2</span>
+        Products
+      </a>
+      <a href="#admin-orders" class="admin-link">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        Orders
+      </a>
+      <a href="#admin-customers" class="admin-link">
+        <span class="material-symbols-outlined">group</span>
+        Customers
+      </a>
+    </nav>
+
+    <div class="admin-user">
+      <div class="user-avatar">
+        <span class="material-symbols-outlined">person</span>
+      </div>
+      <div class="user-info">
+        <strong>Admin User</strong>
+        <span>atelier.admin@digital.com</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Admin Content Area -->
+  <main class="admin-content">
+    <header class="admin-header flex justify-between items-center">
+      <div class="flex items-center" style="gap: 1rem">
+        <button class="icon-btn-sm menu-toggle" id="admin-sidebar-open" style="display: flex; background: var(--surface-container-highest)">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <div>
+          <h1>Store Overview</h1>
+          <p>Performance metrics and product management.</p>
+        </div>
+      </div>
+      <div class="admin-actions flex" style="gap: 1rem">
+        <button
+          class="btn-secondary"
+          style="
+            border-color: var(--outline-variant);
+            color: var(--on-surface);
+            padding: 0.5rem 1rem;
+          "
+        >
+          <span
+            class="material-symbols-outlined"
+            style="vertical-align: -4px; margin-right: 4px"
+            >calendar_today</span
+          >
+          Last 30 Days
+        </button>
+        <button
+          class="btn-primary flex items-center"
+          style="gap: 0.25rem; padding: 0.5rem 1rem"
+        >
+          <span class="material-symbols-outlined">add</span> Add Product
+        </button>
+      </div>
+    </header>
+
+    <!-- Metrics -->
+    <section class="admin-metrics grid">
+      <div class="metric-card">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="metric-label">Total Sales</p>
+            <h3 class="metric-value">$124,592.00</h3>
+          </div>
+          <span
+            class="material-symbols-outlined metric-icon"
+            style="color: var(--secondary); background: rgba(119, 90, 25, 0.1)"
+            >payments</span
+          >
+        </div>
+        <!-- Fake Bar Chart -->
+        <div class="fake-chart flex items-end">
+          <div style="height: 40%"></div>
+          <div style="height: 60%"></div>
+          <div style="height: 30%"></div>
+          <div style="height: 80%"></div>
+          <div style="height: 50%"></div>
+          <div class="active" style="height: 70%"></div>
+          <div style="height: 60%"></div>
+          <span class="trend trend-up">+12.5%</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="metric-label">Total Orders</p>
+            <h3 class="metric-value">1,482</h3>
+          </div>
+          <span
+            class="material-symbols-outlined metric-icon"
+            style="color: var(--primary); background: var(--primary-container)"
+            >shopping_bag</span
+          >
+        </div>
+        <!-- Fake Bar Chart -->
+        <div class="fake-chart flex items-end">
+          <div style="height: 20%"></div>
+          <div style="height: 50%"></div>
+          <div style="height: 80%"></div>
+          <div style="height: 40%"></div>
+          <div style="height: 60%"></div>
+          <div class="active" style="height: 80%"></div>
+          <div style="height: 50%"></div>
+          <span class="trend trend-up">+8.2%</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="metric-label">New Customers</p>
+            <h3 class="metric-value">324</h3>
+          </div>
+          <span
+            class="material-symbols-outlined metric-icon"
+            style="
+              color: var(--on-tertiary-fixed-variant);
+              background: var(--tertiary-fixed);
+            "
+            >person_add</span
+          >
+        </div>
+        <!-- Fake Bar Chart -->
+        <div class="fake-chart flex items-end">
+          <div style="height: 60%"></div>
+          <div style="height: 40%"></div>
+          <div style="height: 30%"></div>
+          <div style="height: 70%"></div>
+          <div style="height: 40%"></div>
+          <div style="height: 80%"></div>
+          <div
+            class="active"
+            style="height: 50%; background: var(--tertiary)"
+          ></div>
+          <span
+            class="trend trend-up"
+            style="color: var(--on-tertiary-fixed-variant)"
+            >+24%</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Table -->
+    <section class="admin-table-container">
+      <div class="table-header flex justify-between items-center">
+        <h2>Manage Products</h2>
+        <div class="search-bar-sm relative">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" placeholder="Search products..." />
+        </div>
+      </div>
+
+      <table class="admin-table w-full">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Inventory</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="table-product">
+                <div class="table-product__img">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTiaRIC0PLcmfPrbSDxva4K7m9BwWPfyT7uYdeayJ18S9pmH8ZyHh_uxf5YBBesi2v9eNwT6P_o_l8JiM0viu3uv3k6C3OGtmMaRGKBtkyyvD1XrdmuwB2HkxurYvLhMMSqOJBBHRx1Z4xp7M5p0L2Qv7nfGIgudNVxdov1UGN8gDz6x4w20a8S2XAf9WlkuyPcwTWfCiRA0MMJ_KRARf1MraNYoU1vfox_EzU3komXJSUCwfefKhd4iIxKNYvZN3ZVWqpj6quV5Iu"
+                  />
+                </div>
+                <div class="table-product__info">
+                  <strong>Atelier Classic Watch</strong>
+                  <span>Luxury / Accessories</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <span class="status-badge status-badge--success">In Stock</span>
+            </td>
+            <td>124 Units</td>
+            <td class="table-price">$240.00</td>
+            <td>
+              <button class="icon-btn-sm">
+                <span class="material-symbols-outlined">edit</span>
+              </button>
+              <button class="icon-btn-sm error-text">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="table-product">
+                <div class="table-product__img">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPdkHikX6aT9afPw_1ha3jx8fNonHX9hHeMbfb0SdQ27kfJDOicchm96Llfgte4JWybi1EuPK5TlDII_GtqE5Lpwdlri4FIEcVkxkUZb2xtJkm3x-xzKrz7XiQZBQepcS0nwIUy_5Y9qJ5PywL_6yHozLEl5UEo7XyFBMEgV3GISAFKDjmvPfQ29kWLr15_DAdIvFh1taIaU15rH5Mj09zNuym8a0KmtEaku8dCIw4S7sFHp-m-1QqYi8k2skJxswDvaqUW5ZxY7y2"
+                  />
+                </div>
+                <div class="table-product__info">
+                  <strong>Crimson Velocity Runners</strong>
+                  <span>Footwear / Sports</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <span class="status-badge status-badge--warning">Low Stock</span>
+            </td>
+            <td>12 Units</td>
+            <td class="table-price">$185.00</td>
+            <td>
+              <button class="icon-btn-sm">
+                <span class="material-symbols-outlined">edit</span>
+              </button>
+              <button class="icon-btn-sm error-text">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="table-product">
+                <div class="table-product__img">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOLy150ekSL816nydx-CEJbp3bk_m6zpnaaM6dqn0IREcCXQ8c1BJSbLyCBCRuCk8B8vmSYoAS4EN5qVEpEXMltE_X6n6iD2DLSbT0_j4WQQkX4wKqO1zsjZxx7XtPPu1CjFG66vKEAF0mKqAFx6wLj4ANZ28QZQhhPIJdMcQTE0uNhqoxpzebRqnab5JZf5ybyx03vxK4S2JZDpHUsmBdgSdK8hrIDyjSZGhFL--etYBMzp7jAGfpUWpnM5VTk2Kr2Gg75cgCPgKV"
+                  />
+                </div>
+                <div class="table-product__info">
+                  <strong>Noir Soundscape Headset</strong>
+                  <span>Electronics / Audio</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <span class="status-badge status-badge--success">In Stock</span>
+            </td>
+            <td>240 Units</td>
+            <td class="table-price">$320.00</td>
+            <td>
+              <button class="icon-btn-sm">
+                <span class="material-symbols-outlined">edit</span>
+              </button>
+              <button class="icon-btn-sm error-text">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-footer">
+        <button class="view-all-table">View All Products</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function() {
+      const sidebar = document.querySelector('.admin-sidebar');
+      const openBtn = document.getElementById('admin-sidebar-open');
+      
+      if(openBtn && sidebar) {
+        openBtn.addEventListener('click', () => {
+          sidebar.classList.add('open');
+        });
+
+        // Close when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+          if (sidebar.classList.contains('open') && 
+              !sidebar.contains(e.target) && 
+              !openBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        });
+      }
+    })();
+  </script>
+</div>
