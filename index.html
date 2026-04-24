@@ -1,167 +1,166 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Atelier</title>
 
-    <!-- Google Fonts Component -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Atelier</title>
 
-    <!-- Core CSS libraries -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/components/common.css" />
-    <link rel="stylesheet" href="./assets/css/components/header.css" />
-    <link rel="stylesheet" href="./assets/css/components/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;400;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="./assets/css/pages/home.css" />
-    <link rel="stylesheet" href="./assets/css/pages/products.css" />
-    <link rel="stylesheet" href="./assets/css/pages/cart.css" />
-    <link rel="stylesheet" href="./assets/css/pages/auth.css" />
-    <link rel="stylesheet" href="./assets/css/pages/dashboard.css" />
-    <link rel="stylesheet" href="./assets/css/pages/admin.css" />
-    <link rel="stylesheet" href="./assets/css/pages/checkout.css" />
-    <link rel="stylesheet" href="./assets/css/pages/payment-methods.css" />
-    <link rel="stylesheet" href="./assets/css/pages/admin-tables.css" />
-    <link rel="stylesheet" href="./assets/css/pages/product-detail.css" />
-    <link rel="stylesheet" href="./assets/css/pages/search-results.css" />
-    <link rel="stylesheet" href="./assets/css/pages/reviews.css" />
-  </head>
-  <body>
-    <!-- Top Nav Bar (Universal) -->
-    <header class="site-header">
-      <nav class="site-nav">
-        <a href="#home" class="logo-link">Digital Atelier</a>
+  <!-- CSS libraries -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/components/common.css" />
+  <link rel="stylesheet" href="./assets/css/components/header.css" />
+  <link rel="stylesheet" href="./assets/css/components/footer.css" />
 
-        <div class="nav-links">
-          <a href="#products" class="nav-link">Shop</a>
-          <a href="#collections" class="nav-link">Collections</a>
+  <link rel="stylesheet" href="./assets/css/pages/home.css" />
+  <link rel="stylesheet" href="./assets/css/pages/products.css" />
+  <link rel="stylesheet" href="./assets/css/pages/cart.css" />
+  <link rel="stylesheet" href="./assets/css/pages/auth.css" />
+  <link rel="stylesheet" href="./assets/css/pages/dashboard.css" />
+  <link rel="stylesheet" href="./assets/css/pages/admin.css" />
+  <link rel="stylesheet" href="./assets/css/pages/checkout.css" />
+  <link rel="stylesheet" href="./assets/css/pages/payment-methods.css" />
+  <link rel="stylesheet" href="./assets/css/pages/admin-tables.css" />
+  <link rel="stylesheet" href="./assets/css/pages/product-detail.css" />
+  <link rel="stylesheet" href="./assets/css/pages/search-results.css" />
+  <link rel="stylesheet" href="./assets/css/pages/reviews.css" />
+</head>
+
+<body>
+  <!-- Top Nav Bar (Universal) -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="#home" class="logo-link">Digital Atelier</a>
+
+      <div class="nav-links">
+        <a href="#products" class="nav-link">Shop</a>
+        <a href="#collections" class="nav-link">Collections</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="search-bar">
+          <span class="material-symbols-outlined icon">search</span>
+          <input type="text" class="input-field" placeholder="Search..." />
         </div>
 
-        <div class="nav-actions">
-          <div class="search-bar">
-            <span class="material-symbols-outlined icon">search</span>
-            <input type="text" class="input-field" placeholder="Search..." />
-          </div>
+        <a href="#cart" class="icon-btn" title="Shopping Cart">
+          <span class="material-symbols-outlined">shopping_bag</span>
+        </a>
+        <a href="#dashboard" class="icon-btn" title="My Account">
+          <span class="material-symbols-outlined">person</span>
+        </a>
 
-          <a href="#cart" class="icon-btn" title="Shopping Cart">
-            <span class="material-symbols-outlined">shopping_bag</span>
-          </a>
-          <a href="#dashboard" class="icon-btn" title="My Account">
-            <span class="material-symbols-outlined">person</span>
-          </a>
+        <button class="icon-btn menu-toggle" id="open-menu" title="Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-          <button class="icon-btn menu-toggle" id="open-menu" title="Menu">
-            <span class="material-symbols-outlined">menu</span>
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer" id="mobile-menu">
+    <button class="icon-btn mobile-drawer-close" id="close-menu">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#products" class="mobile-nav-link">Shop</a>
+      <a href="#collections" class="mobile-nav-link">Collections</a>
+      <a href="#cart" class="mobile-nav-link">My Bag</a>
+      <a href="#dashboard" class="mobile-nav-link">Profile</a>
+    </nav>
+  </div>
+
+
+  <main id="app-root"></main>
+
+  <!-- Global Footer (Universal) -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Digital Atelier</div>
+        <p class="footer-desc">
+          Curating architectural essentials for the modern living space.
+          Craftsmanship without compromise.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#products">New Arrivals</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Atelier Update</h4>
+        <p class="footer-desc" style="margin-top: 0.5rem">
+          Join our inner circle for exclusive early access and studio updates.
+        </p>
+        <div class="newsletter-input-wrapper">
+          <input type="email" placeholder="email@example.com" />
+          <button class="icon-btn">
+            <span class="material-symbols-outlined">arrow_forward</span>
           </button>
         </div>
-      </nav>
-    </header>
-
-    <!-- Mobile Menu Drawer -->
-    <div class="mobile-drawer" id="mobile-menu">
-      <button class="icon-btn mobile-drawer-close" id="close-menu">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-
-      <nav class="mobile-nav-links">
-        <a href="#home" class="mobile-nav-link">Home</a>
-        <a href="#products" class="mobile-nav-link">Shop</a>
-        <a href="#collections" class="mobile-nav-link">Collections</a>
-        <a href="#cart" class="mobile-nav-link">My Bag</a>
-        <a href="#dashboard" class="mobile-nav-link">Profile</a>
-      </nav>
+      </div>
     </div>
 
-    <!-- App Root for Routing -->
-    <main id="app-root"></main>
-
-    <!-- Global Footer (Universal) -->
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="footer-logo">Digital Atelier</div>
-          <p class="footer-desc">
-            Curating architectural essentials for the modern living space.
-            Craftsmanship without compromise.
-          </p>
-        </div>
-
-        <div class="footer-links-group">
-          <h4>Shop</h4>
-          <ul>
-            <li><a href="#products">New Arrivals</a></li>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Archive</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-group">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Sustainability</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-newsletter">
-          <h4>Atelier Update</h4>
-          <p class="footer-desc" style="margin-top: 0.5rem">
-            Join our inner circle for exclusive early access and studio updates.
-          </p>
-          <div class="newsletter-input-wrapper">
-            <input type="email" placeholder="email@example.com" />
-            <button class="icon-btn">
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </button>
-          </div>
-        </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Digital Atelier. All rights reserved.</div>
+      <div class="footer-socials">
+        <span>London</span> &bull; <span>Paris</span> &bull;
+        <span>Tokyo</span> &bull;
+        <span>New York</span>
       </div>
+    </div>
+  </footer>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Digital Atelier. All rights reserved.</div>
-        <div class="footer-socials">
-          <span>London</span> &bull; <span>Paris</span> &bull;
-          <span>Tokyo</span> &bull;
-          <span>New York</span>
-        </div>
-      </div>
-    </footer>
+  <!-- Scripts -->
+  <script src="./assets/js/router.js"></script>
+  <script>
+    // Mobile Menu Logic
+    const mobileMenu = document.getElementById('mobile-menu');
+    const openBtn = document.getElementById('open-menu');
+    const closeBtn = document.getElementById('close-menu');
+    const drawerLinks = document.querySelectorAll('.mobile-nav-link');
 
-    <!-- Scripts -->
-    <script src="./assets/js/router.js"></script>
-    <script>
-      // Mobile Menu Logic
-      const mobileMenu = document.getElementById('mobile-menu');
-      const openBtn = document.getElementById('open-menu');
-      const closeBtn = document.getElementById('close-menu');
-      const drawerLinks = document.querySelectorAll('.mobile-nav-link');
+    function toggleMenu() {
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    }
 
-      function toggleMenu() {
-        mobileMenu.classList.toggle('open');
-        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-      }
+    openBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
 
-      openBtn.addEventListener('click', toggleMenu);
-      closeBtn.addEventListener('click', toggleMenu);
-
-      drawerLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('open');
-          document.body.style.overflow = '';
-        });
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

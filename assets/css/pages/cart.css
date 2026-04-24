@@ -1,253 +1,262 @@
-/* PAGE: CART */
 .cart-header {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .cart-header h1 {
-    font-size: clamp(2.5rem, 8vw, 3.75rem);
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.05em;
+  font-size: clamp(2.5rem, 8vw, 3.75rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.05em;
 }
 
 .cart-header p {
-    color: var(--on-surface-variant);
-    font-weight: 500;
-    letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 .cart-layout {
-    flex-direction: column;
-    gap: 4rem;
-    align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
 }
 
 @media (min-width: 1024px) {
-    .cart-layout { flex-direction: row; }
+  .cart-layout {
+    flex-direction: row;
+  }
 }
 
 .cart-items {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-item {
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid var(--outline-variant);
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--outline-variant);
 }
 
 @media (min-width: 768px) {
-    .cart-item { flex-direction: row; }
+  .cart-item {
+    flex-direction: row;
+  }
 }
 
 .cart-item-img {
-    width: 100%;
-    aspect-ratio: 4/5;
-    background: var(--surface-container);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: var(--surface-container);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
-    .cart-item-img { width: 192px; }
+  .cart-item-img {
+    width: 192px;
+  }
 }
 
 .cart-item-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s;
 }
 
 .cart-item:hover .cart-item-img img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .cart-item-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cart-item-details h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-    letter-spacing: -0.02em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
 }
 
 .cart-price {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-headline);
 }
 
 .cart-item-actions {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .qty-selector {
-    background: var(--surface-container);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-full);
-    gap: 1rem;
+  background: var(--surface-container);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  gap: 1rem;
 }
 
 .qty-selector button {
-    padding: 0;
-    color: var(--on-surface);
+  padding: 0;
+  color: var(--on-surface);
 }
 
 .qty-selector button:hover {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 .qty-selector .qty {
-    font-weight: 700;
-    width: 1.5rem;
-    text-align: center;
+  font-weight: 700;
+  width: 1.5rem;
+  text-align: center;
 }
 
 .remove-btn {
-    font-size: 0.875rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--on-surface-variant);
-    gap: 0.5rem;
-    padding: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--on-surface-variant);
+  gap: 0.5rem;
+  padding: 0;
 }
 
 .remove-btn:hover {
-    color: var(--error);
+  color: var(--error);
 }
 
 .cart-sidebar {
-    width: 100%;
-    position: sticky;
-    top: 100px;
+  width: 100%;
+  position: sticky;
+  top: 100px;
 }
 
 @media (min-width: 1024px) {
-    .cart-sidebar { width: 320px; }
+  .cart-sidebar {
+    width: 320px;
+  }
 }
 
 .summary-card {
-    background: var(--surface-container-low);
-    padding: 2rem;
-    border-radius: var(--radius-xl);
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow-sm);
+  background: var(--surface-container-low);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .summary-card h2 {
-    font-size: 1.875rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
-    letter-spacing: -0.02em;
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
 }
 
 .summary-lines {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    color: var(--on-surface-variant);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--on-surface-variant);
 }
 
 .summary-total {
-    border-top: 1px solid var(--outline-variant);
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
-    font-weight: 700;
+  border-top: 1px solid var(--outline-variant);
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .secure-checkout p {
-    font-size: 0.65rem;
-    text-align: center;
-    color: var(--on-surface-variant);
-    letter-spacing: 0.1em;
-    font-weight: 700;
+  font-size: 0.65rem;
+  text-align: center;
+  color: var(--on-surface-variant);
+  letter-spacing: 0.1em;
+  font-weight: 700;
 }
 
 .payment-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    gap: 1rem;
-    opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  opacity: 0.5;
 }
 
 .promo-card {
-    background: var(--surface-container-low); 
-    padding: 2rem;
-    border-radius: var(--radius-xl);
-    border: 1px dashed var(--outline-variant);
+  background: var(--surface-container-low);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  border: 1px dashed var(--outline-variant);
 }
 
 .promo-card label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: var(--on-surface-variant);
-    display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--on-surface-variant);
+  display: block;
 }
 
 .promo-input-wrapper {
-    display: flex;
-    margin-top: 1rem;
-    background: var(--surface);
-    border: 1px solid var(--outline-variant);
-    border-radius: var(--radius-full);
-    overflow: hidden;
-    padding: 0.25rem;
+  display: flex;
+  margin-top: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  padding: 0.25rem;
 }
 
 .promo-input-wrapper input {
-    flex: 1;
-    min-width: 0; /* Cho phép input co lại tránh tràn viền */
-    border: none;
-    background: transparent;
-    padding: 0.75rem 1rem;
-    outline: none;
-    font-family: inherit;
-    font-size: 0.875rem;
-    color: var(--on-surface);
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--on-surface);
 }
 
 .promo-input-wrapper button {
-    background: var(--primary);
-    color: var(--on-primary);
-    border: none;
-    padding: 0 1.5rem;
-    border-radius: var(--radius-full);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    transition: background 0.2s, opacity 0.2s;
+  background: var(--primary);
+  color: var(--on-primary);
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    opacity 0.2s;
 }
 
 .promo-input-wrapper button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .cart-recommendations {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 .rec-header {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .rec-header h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    letter-spacing: -0.05em;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
 }

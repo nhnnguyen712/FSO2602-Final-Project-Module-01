@@ -1,165 +1,163 @@
-<!-- Checkout Partial -->
 <main class="checkout-container">
-    <header class="checkout-header">
-        <h1 class="checkout-header__title">Checkout</h1>
-        <p class="checkout-header__desc">Review your selections from the Atelier and finalize your details for handcrafted delivery.</p>
-    </header>
+  <header class="checkout-header">
+    <h1 class="checkout-header__title">Checkout</h1>
+    <p class="checkout-header__desc">Review your selections from the Atelier and finalize your details for handcrafted
+      delivery.</p>
+  </header>
 
-    <div class="checkout-layout">
-        <!-- Left Column: Cart & Shipping -->
-        <div class="checkout-layout__main">
-            
-            <!-- Shopping Cart Section -->
-            <section class="checkout-cart">
-                <div class="checkout-cart__header">
-                    <h2 class="checkout-cart__title">Shopping Cart</h2>
-                    <span class="checkout-cart__count">2 Items</span>
-                </div>
-                
-                <div class="checkout-cart__list">
-                    <!-- Cart Item 1 -->
-                    <div class="checkout-item group">
-                        <div class="checkout-item__img-wrapper">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNIOhVgxX1MZUdWh5bAA6QtrXsTwGCG_4NHqqdC8ZsrGeVAtPvz7ufOFzSS5w4SSj9ZxRhmRqB2iGB5yuGjntouss8QaM0wzg3ms9zWTqqe97-cBOpaff2NFsBtKZorrGfSWUoAAwQnZ7lbsyNrV09ql_jTDQdHSpLiCrxENZjANZ3-3QUUHS-lbaM0g0QsZs8UNfLtkkcIzHHGWKltMPeSmHPObKkdg21dhBh7Zz8rHKszPMcM3MrRR7ga0KZV0GY-AYE5o4XC_rk" alt="Architectural Wool Coat"/>
-                        </div>
-                        <div class="checkout-item__details">
-                            <div class="checkout-item__title-row">
-                                <h3 class="checkout-item__title">Architectural Wool Coat</h3>
-                                <span class="checkout-item__price">$850.00</span>
-                            </div>
-                            <p class="checkout-item__variant">Charcoal / Size 48</p>
-                            <div class="checkout-item__actions">
-                                <div class="qty-control">
-                                    <button class="btn-icon"><span class="material-symbols-outlined">remove</span></button>
-                                    <span class="qty-control__val">1</span>
-                                    <button class="btn-icon"><span class="material-symbols-outlined">add</span></button>
-                                </div>
-                                <button class="btn-remove">
-                                    <span class="material-symbols-outlined">delete</span>
-                                    <span>Remove</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Cart Item 2 -->
-                    <div class="checkout-item group">
-                        <div class="checkout-item__img-wrapper">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4-2Nl69N34gio_bWwes43ZfQRkOrqaAT5Y7582UFf-lxuELw8e_R3gARANt0276DnahiAzklqCnS-09gST_VekYwICl2i-0MYz3MAFsSqYtd1oDiPNpt0xU-q106XBbQoaQMG1CH7oD5lSog8Y2uQ3Lq9-NBa3TILI32VNE7nMWq1SZ8s1AsEj9k3DSW_EeelmmoCgsRU4gGRIk_J-JB0ypFp_opbZRrVf8MtMeZ5TQTzrjr1oxlwlEALBjsEp_zOq3KqWQRa2XAE" alt="Organic Silk Blend Knit"/>
-                        </div>
-                        <div class="checkout-item__details">
-                            <div class="checkout-item__title-row">
-                                <h3 class="checkout-item__title">Organic Silk Blend Knit</h3>
-                                <span class="checkout-item__price">$320.00</span>
-                            </div>
-                            <p class="checkout-item__variant">Ivory / Size M</p>
-                            <div class="checkout-item__actions">
-                                <div class="qty-control">
-                                    <button class="btn-icon"><span class="material-symbols-outlined">remove</span></button>
-                                    <span class="qty-control__val">1</span>
-                                    <button class="btn-icon"><span class="material-symbols-outlined">add</span></button>
-                                </div>
-                                <button class="btn-remove">
-                                    <span class="material-symbols-outlined">delete</span>
-                                    <span>Remove</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Shipping Information -->
-            <section class="checkout-shipping">
-                <h2 class="checkout-shipping__title">Shipping Information</h2>
-                <form class="checkout-shipping__form">
-                    <div class="form-row-2">
-                        <div class="form-group">
-                            <label>First Name</label>
-                            <input type="text" class="input-modern" placeholder="Julian">
-                        </div>
-                        <div class="form-group">
-                            <label>Last Name</label>
-                            <input type="text" class="input-modern" placeholder="Vandervilt">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Delivery Address</label>
-                        <input type="text" class="input-modern" placeholder="88 Atelier Row, Design District">
-                    </div>
-                    
-                    <div class="form-row-3">
-                        <div class="form-group form-col-2">
-                            <label>City</label>
-                            <input type="text" class="input-modern" placeholder="New York">
-                        </div>
-                        <div class="form-group">
-                            <label>Postal Code</label>
-                            <input type="text" class="input-modern" placeholder="10001">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" class="input-modern" placeholder="+1 (555) 000-0000">
-                    </div>
-                </form>
-            </section>
+  <div class="checkout-layout">
+    <div class="checkout-layout__main">
+      <section class="checkout-cart">
+        <div class="checkout-cart__header">
+          <h2 class="checkout-cart__title">Shopping Cart</h2>
+          <span class="checkout-cart__count">2 Items</span>
         </div>
 
-        <!-- Right Column: Order Summary (Sticky) -->
-        <aside class="checkout-layout__sidebar">
-            <div class="order-summary-card">
-                <!-- Decor -->
-                <div class="bg-blur-decor"></div>
-                
-                <h2 class="order-summary-card__title">Order Summary</h2>
-                
-                <div class="order-summary-card__content">
-                    <div class="summary-row">
-                        <span class="summary-label">Subtotal</span>
-                        <span class="summary-val">$1,170.00</span>
-                    </div>
-                    <div class="summary-row">
-                        <span class="summary-label">Shipping</span>
-                        <span class="summary-val">Calculated at checkout</span>
-                    </div>
-                    <div class="summary-row">
-                        <span class="summary-label">Estimated Tax</span>
-                        <span class="summary-val">$93.60</span>
-                    </div>
-                    
-                    <div class="summary-total-row">
-                        <div>
-                            <p class="summary-total-label">Total</p>
-                            <p class="summary-total-val">$1,263.60</p>
-                        </div>
-                        <span class="summary-total-currency">USD</span>
-                    </div>
-                    
-                    <div class="order-submit">
-                        <button class="btn-checkout" onclick="window.location.hash='#payment-methods'">
-                            Proceed to Payment
-                        </button>
-                        <p class="order-terms">
-                            By placing your order, you agree to the Digital Atelier <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
-                        </p>
-                    </div>
-                </div>
+        <div class="checkout-cart__list">
+          <div class="checkout-item group">
+            <div class="checkout-item__img-wrapper">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNIOhVgxX1MZUdWh5bAA6QtrXsTwGCG_4NHqqdC8ZsrGeVAtPvz7ufOFzSS5w4SSj9ZxRhmRqB2iGB5yuGjntouss8QaM0wzg3ms9zWTqqe97-cBOpaff2NFsBtKZorrGfSWUoAAwQnZ7lbsyNrV09ql_jTDQdHSpLiCrxENZjANZ3-3QUUHS-lbaM0g0QsZs8UNfLtkkcIzHHGWKltMPeSmHPObKkdg21dhBh7Zz8rHKszPMcM3MrRR7ga0KZV0GY-AYE5o4XC_rk"
+                alt="Architectural Wool Coat" />
             </div>
-            
-            <!-- Trust Badges -->
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <span class="material-symbols-outlined badge-icon">verified_user</span>
-                    <span class="badge-text">Secure Payment</span>
+            <div class="checkout-item__details">
+              <div class="checkout-item__title-row">
+                <h3 class="checkout-item__title">Architectural Wool Coat</h3>
+                <span class="checkout-item__price">$850.00</span>
+              </div>
+              <p class="checkout-item__variant">Charcoal / Size 48</p>
+              <div class="checkout-item__actions">
+                <div class="qty-control">
+                  <button class="btn-icon"><span class="material-symbols-outlined">remove</span></button>
+                  <span class="qty-control__val">1</span>
+                  <button class="btn-icon"><span class="material-symbols-outlined">add</span></button>
                 </div>
-                <div class="trust-badge">
-                    <span class="material-symbols-outlined badge-icon">local_shipping</span>
-                    <span class="badge-text">Insured Transit</span>
-                </div>
+                <button class="btn-remove">
+                  <span class="material-symbols-outlined">delete</span>
+                  <span>Remove</span>
+                </button>
+              </div>
             </div>
-        </aside>
+          </div>
+
+          <div class="checkout-item group">
+            <div class="checkout-item__img-wrapper">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4-2Nl69N34gio_bWwes43ZfQRkOrqaAT5Y7582UFf-lxuELw8e_R3gARANt0276DnahiAzklqCnS-09gST_VekYwICl2i-0MYz3MAFsSqYtd1oDiPNpt0xU-q106XBbQoaQMG1CH7oD5lSog8Y2uQ3Lq9-NBa3TILI32VNE7nMWq1SZ8s1AsEj9k3DSW_EeelmmoCgsRU4gGRIk_J-JB0ypFp_opbZRrVf8MtMeZ5TQTzrjr1oxlwlEALBjsEp_zOq3KqWQRa2XAE"
+                alt="Organic Silk Blend Knit" />
+            </div>
+            <div class="checkout-item__details">
+              <div class="checkout-item__title-row">
+                <h3 class="checkout-item__title">Organic Silk Blend Knit</h3>
+                <span class="checkout-item__price">$320.00</span>
+              </div>
+              <p class="checkout-item__variant">Ivory / Size M</p>
+              <div class="checkout-item__actions">
+                <div class="qty-control">
+                  <button class="btn-icon"><span class="material-symbols-outlined">remove</span></button>
+                  <span class="qty-control__val">1</span>
+                  <button class="btn-icon"><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <button class="btn-remove">
+                  <span class="material-symbols-outlined">delete</span>
+                  <span>Remove</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shipping Information -->
+      <section class="checkout-shipping">
+        <h2 class="checkout-shipping__title">Shipping Information</h2>
+        <form class="checkout-shipping__form">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" class="input-modern" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" class="input-modern" placeholder="Last Name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Delivery Address</label>
+            <input type="text" class="input-modern" placeholder="Delivery Address">
+          </div>
+
+          <div class="form-row-3">
+            <div class="form-group form-col-2">
+              <label>City</label>
+              <input type="text" class="input-modern" placeholder="City">
+            </div>
+            <div class="form-group">
+              <label>Postal Code</label>
+              <input type="text" class="input-modern" placeholder="Postal Code">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" class="input-modern" placeholder="Phone Number">
+          </div>
+        </form>
+      </section>
     </div>
+
+    <aside class="checkout-layout__sidebar">
+      <div class="order-summary-card">
+        <div class="bg-blur-decor"></div>
+
+        <h2 class="order-summary-card__title">Order Summary</h2>
+
+        <div class="order-summary-card__content">
+          <div class="summary-row">
+            <span class="summary-label">Subtotal</span>
+            <span class="summary-val">$1,170.00</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Shipping</span>
+            <span class="summary-val">Calculated at checkout</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Estimated Tax</span>
+            <span class="summary-val">$93.60</span>
+          </div>
+
+          <div class="summary-total-row">
+            <div>
+              <p class="summary-total-label">Total</p>
+              <p class="summary-total-val">$1,263.60</p>
+            </div>
+            <span class="summary-total-currency">USD</span>
+          </div>
+
+          <div class="order-submit">
+            <button class="btn-checkout" onclick="window.location.hash='#payment-methods'">
+              Proceed to Payment
+            </button>
+            <p class="order-terms">
+              By placing your order, you agree to the Digital Atelier <a href="#">Terms of Service</a> and <a
+                href="#">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <span class="material-symbols-outlined badge-icon">verified_user</span>
+          <span class="badge-text">Secure Payment</span>
+        </div>
+        <div class="trust-badge">
+          <span class="material-symbols-outlined badge-icon">local_shipping</span>
+          <span class="badge-text">Insured Transit</span>
+        </div>
+      </div>
+    </aside>
+  </div>
 </main>

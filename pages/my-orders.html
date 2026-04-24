@@ -1,127 +1,152 @@
-<!-- Dashboard Layout - My Orders -->
 <div class="dashboard-layout pt-main">
-    <!-- Side Nav Bar -->
-    <aside class="dashboard-sidebar">
-        <div class="sidebar-header">
-            <h2>Your Atelier</h2>
-            <p>Order history & tracking</p>
+  <!-- Side Nav Bar -->
+  <aside class="dashboard-sidebar">
+    <div class="sidebar-header">
+      <h2>Your Atelier</h2>
+      <p>Order history & tracking</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#dashboard" class="sidebar-link">
+        <span class="material-symbols-outlined">person</span>
+        Account Overview
+      </a>
+      <a href="#my-orders" class="sidebar-link active">
+        <span class="material-symbols-outlined">package_2</span>
+        My Orders
+      </a>
+      <a href="#payment-methods" class="sidebar-link">
+        <span class="material-symbols-outlined">payments</span>
+        Payment Methods
+      </a>
+      <a href="#account-security" class="sidebar-link">
+        <span class="material-symbols-outlined">shield</span>
+        Security
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="dashboard-content">
+    <div class="dashboard-content-inner">
+      <header class="dashboard-header flex justify-between items-end">
+        <div>
+          <h1>My Orders</h1>
+          <p>Track your curated collection and recent acquisitions.</p>
+        </div>
+        <div class="filter-dropdown">
+          <button class="btn-secondary"
+            style="font-size: 0.875rem; padding: 0.5rem 1rem; border-color: var(--outline-variant); color: var(--on-surface);">
+            Filter: All Time <span class="material-symbols-outlined"
+              style="font-size: 1rem; vertical-align: middle;">expand_more</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="orders-detailed-list" style="display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Order Group Header -->
+        <div class="order-group-header" style="padding-bottom: 1rem; border-bottom: 1px solid var(--outline-variant);">
+          <h3 style="font-size: 1.125rem; font-weight: 800;">Recent Acquisitions</h3>
         </div>
 
-        <nav class="sidebar-nav">
-            <a href="#dashboard" class="sidebar-link">
-                <span class="material-symbols-outlined">person</span>
-                Account Overview
-            </a>
-            <a href="#my-orders" class="sidebar-link active">
-                <span class="material-symbols-outlined">package_2</span>
-                My Orders
-            </a>
-            <a href="#payment-methods" class="sidebar-link">
-                <span class="material-symbols-outlined">payments</span>
-                Payment Methods
-            </a>
-            <a href="#account-security" class="sidebar-link">
-                <span class="material-symbols-outlined">shield</span>
-                Security
-            </a>
-        </nav>
-    </aside>
-
-    <!-- Main Content Area -->
-    <main class="dashboard-content">
-        <div class="dashboard-content-inner">
-            <header class="dashboard-header flex justify-between items-end">
-                <div>
-                    <h1>My Orders</h1>
-                    <p>Track your curated collection and recent acquisitions.</p>
-                </div>
-                <div class="filter-dropdown">
-                    <button class="btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem; border-color: var(--outline-variant); color: var(--on-surface);">
-                        Filter: All Time <span class="material-symbols-outlined" style="font-size: 1rem; vertical-align: middle;">expand_more</span>
-                    </button>
-                </div>
-            </header>
-
-            <div class="orders-detailed-list" style="display: flex; flex-direction: column; gap: 2rem;">
-                <!-- Order Group Header -->
-                <div class="order-group-header" style="padding-bottom: 1rem; border-bottom: 1px solid var(--outline-variant);">
-                    <h3 style="font-size: 1.125rem; font-weight: 800;">Recent Acquisitions</h3>
-                </div>
-
-                <!-- Order 1 -->
-                <div class="order-card" style="background: var(--surface-container-low); border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--outline-variant);">
-                    <div class="order-card-header" style="padding: 1.5rem; border-bottom: 1px solid var(--outline-variant); background: var(--surface-container-lowest); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                        <div class="flex" style="gap: 2rem;">
-                            <div>
-                                <p style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">Order Placed</p>
-                                <strong style="font-size: 0.875rem;">October 12, 2026</strong>
-                            </div>
-                            <div>
-                                <p style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">Total</p>
-                                <strong style="font-size: 0.875rem;">&pound;2,450.00</strong>
-                            </div>
-                            <div>
-                                <p style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">Order #</p>
-                                <strong style="font-size: 0.875rem;">AT-88293</strong>
-                            </div>
-                        </div>
-                        <div class="flex" style="gap: 1rem;">
-                            <button class="btn-secondary" style="font-size: 0.75rem; padding: 0.5rem 1rem;">View Details</button>
-                            <button class="btn-secondary" style="font-size: 0.75rem; padding: 0.5rem 1rem;">Invoice</button>
-                        </div>
-                    </div>
-                    <div class="order-card-body" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;">
-                        <div class="flex items-center" style="gap: 1.5rem;">
-                            <div style="width: 5rem; height: 5rem; border-radius: var(--radius-md); overflow: hidden; background: #fff;">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfROWdGZqnFumqqZ_dRJZ4uWt1dy7_HyCjZk8u7eQugo3bGQ8JUluU5-uF-lxOLyigXklDJxiwlCTUY8JkXhCHGjo27rE2d5cEbO0pBu2yvt5KHcYOy0Mf90cnTNJ8HIaMg4KgxKA434EGZ3SemZMOtAOnTnYn818cDVTL-tyavReptNEt-7bXwBIcFV42J7FI3do9zhMc53yEu5wS1qanPx8cXoYO0Eabr5Pzov-62RDLtWdi2bwAMFLWR9lWvwWJSdES9IeUfG4C" style="width: 100%; height: 100%; object-fit: cover;">
-                            </div>
-                            <div>
-                                <span class="status-badge status-shipped" style="margin-bottom: 0.5rem;">Delivered</span>
-                                <h4 style="font-size: 1rem; margin-bottom: 0.25rem;">Monochrome Essence Timepiece</h4>
-                                <p style="font-size: 0.875rem; color: var(--on-surface-variant);">1 unit &bull; Brushed Steel / Leather</p>
-                            </div>
-                        </div>
-                        <button class="btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.875rem;">Track Package</button>
-                    </div>
-                </div>
-
-                <!-- Order 2 -->
-                <div class="order-card" style="background: var(--surface-container-low); border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--outline-variant);">
-                    <div class="order-card-header" style="padding: 1.5rem; border-bottom: 1px solid var(--outline-variant); background: var(--surface-container-lowest); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                        <div class="flex" style="gap: 2rem;">
-                            <div>
-                                <p style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">Order Placed</p>
-                                <strong style="font-size: 0.875rem;">September 28, 2026</strong>
-                            </div>
-                            <div>
-                                <p style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">Total</p>
-                                <strong style="font-size: 0.875rem;">&pound;890.00</strong>
-                            </div>
-                            <div>
-                                <p style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">Order #</p>
-                                <strong style="font-size: 0.875rem;">AT-88104</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-card-body" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;">
-                        <div class="flex items-center" style="gap: 1.5rem;">
-                            <div style="width: 5rem; height: 5rem; border-radius: var(--radius-md); overflow: hidden; background: #fff;">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1sf5nLtJUrY3rDTvuqwKCAJK-v67-BNPWpZCU0fclrxHNbcY7DJf3lVoiRDvfa5QgQ4djFH37x8rDq1CZfsh35kH5ClKDpkL6wZQNxB0np6W0XSMxs9WN25rg0D3b5Yy92_I1b9MkRd4YZq125hZke4sYH22dnNLwKKD3NbwS6h-ph5CyRnmDVAromxlzIDj67h1pQSomw4pi56dhwyCSQ8kzJsUohHdRwavwgP3RK9KxfMePM-tQxGTWLEYzgP5Xl2lMNxljR0A3" style="width: 100%; height: 100%; object-fit: cover;">
-                            </div>
-                            <div>
-                                <span class="status-badge status-closed" style="margin-bottom: 0.5rem; background: var(--surface-variant);">Closed</span>
-                                <h4 style="font-size: 1rem; margin-bottom: 0.25rem;">Hand-Woven Linen Collection</h4>
-                                <p style="font-size: 0.875rem; color: var(--on-surface-variant);">3 units &bull; Natural Beige</p>
-                            </div>
-                        </div>
-                        <button class="btn-secondary" style="padding: 0.75rem 1.5rem; font-size: 0.875rem;">Order Again</button>
-                    </div>
-                </div>
-
-                <div class="table-footer" style="text-align: center; padding: 2rem;">
-                    <button class="btn-secondary" style="border: none;">Load more orders</button>
-                </div>
+        <div class="order-card"
+          style="background: var(--surface-container-low); border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--outline-variant);">
+          <div class="order-card-header"
+            style="padding: 1.5rem; border-bottom: 1px solid var(--outline-variant); background: var(--surface-container-lowest); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div class="flex" style="gap: 2rem;">
+              <div>
+                <p
+                  style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">
+                  Order Placed</p>
+                <strong style="font-size: 0.875rem;">October 12, 2026</strong>
+              </div>
+              <div>
+                <p
+                  style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">
+                  Total</p>
+                <strong style="font-size: 0.875rem;">&pound;2,450.00</strong>
+              </div>
+              <div>
+                <p
+                  style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">
+                  Order #</p>
+                <strong style="font-size: 0.875rem;">AT-88293</strong>
+              </div>
             </div>
+            <div class="flex" style="gap: 1rem;">
+              <button class="btn-secondary" style="font-size: 0.75rem; padding: 0.5rem 1rem;">View Details</button>
+              <button class="btn-secondary" style="font-size: 0.75rem; padding: 0.5rem 1rem;">Invoice</button>
+            </div>
+          </div>
+          <div class="order-card-body"
+            style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;">
+            <div class="flex items-center" style="gap: 1.5rem;">
+              <div
+                style="width: 5rem; height: 5rem; border-radius: var(--radius-md); overflow: hidden; background: #fff;">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfROWdGZqnFumqqZ_dRJZ4uWt1dy7_HyCjZk8u7eQugo3bGQ8JUluU5-uF-lxOLyigXklDJxiwlCTUY8JkXhCHGjo27rE2d5cEbO0pBu2yvt5KHcYOy0Mf90cnTNJ8HIaMg4KgxKA434EGZ3SemZMOtAOnTnYn818cDVTL-tyavReptNEt-7bXwBIcFV42J7FI3do9zhMc53yEu5wS1qanPx8cXoYO0Eabr5Pzov-62RDLtWdi2bwAMFLWR9lWvwWJSdES9IeUfG4C"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div>
+                <span class="status-badge status-shipped" style="margin-bottom: 0.5rem;">Delivered</span>
+                <h4 style="font-size: 1rem; margin-bottom: 0.25rem;">Monochrome Essence Timepiece</h4>
+                <p style="font-size: 0.875rem; color: var(--on-surface-variant);">1 unit &bull; Brushed Steel / Leather
+                </p>
+              </div>
+            </div>
+            <button class="btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.875rem;">Track Package</button>
+          </div>
         </div>
-    </main>
+
+        <div class="order-card"
+          style="background: var(--surface-container-low); border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--outline-variant);">
+          <div class="order-card-header"
+            style="padding: 1.5rem; border-bottom: 1px solid var(--outline-variant); background: var(--surface-container-lowest); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div class="flex" style="gap: 2rem;">
+              <div>
+                <p
+                  style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">
+                  Order Placed</p>
+                <strong style="font-size: 0.875rem;">September 28, 2026</strong>
+              </div>
+              <div>
+                <p
+                  style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">
+                  Total</p>
+                <strong style="font-size: 0.875rem;">&pound;890.00</strong>
+              </div>
+              <div>
+                <p
+                  style="font-size: 0.65rem; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.25rem;">
+                  Order #</p>
+                <strong style="font-size: 0.875rem;">AT-88104</strong>
+              </div>
+            </div>
+          </div>
+          <div class="order-card-body"
+            style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;">
+            <div class="flex items-center" style="gap: 1.5rem;">
+              <div
+                style="width: 5rem; height: 5rem; border-radius: var(--radius-md); overflow: hidden; background: #fff;">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1sf5nLtJUrY3rDTvuqwKCAJK-v67-BNPWpZCU0fclrxHNbcY7DJf3lVoiRDvfa5QgQ4djFH37x8rDq1CZfsh35kH5ClKDpkL6wZQNxB0np6W0XSMxs9WN25rg0D3b5Yy92_I1b9MkRd4YZq125hZke4sYH22dnNLwKKD3NbwS6h-ph5CyRnmDVAromxlzIDj67h1pQSomw4pi56dhwyCSQ8kzJsUohHdRwavwgP3RK9KxfMePM-tQxGTWLEYzgP5Xl2lMNxljR0A3"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div>
+                <span class="status-badge status-closed"
+                  style="margin-bottom: 0.5rem; background: var(--surface-variant);">Closed</span>
+                <h4 style="font-size: 1rem; margin-bottom: 0.25rem;">Hand-Woven Linen Collection</h4>
+                <p style="font-size: 0.875rem; color: var(--on-surface-variant);">3 units &bull; Natural Beige</p>
+              </div>
+            </div>
+            <button class="btn-secondary" style="padding: 0.75rem 1.5rem; font-size: 0.875rem;">Order Again</button>
+          </div>
+        </div>
+
+        <div class="table-footer" style="text-align: center; padding: 2rem;">
+          <button class="btn-secondary" style="border: none;">Load more orders</button>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>

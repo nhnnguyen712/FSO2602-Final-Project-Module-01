@@ -1,166 +1,163 @@
-<!-- Payment Methods Partial -->
 <div class="dashboard-layout account-layout">
-    <!-- SideNavBar (Account) -->
-    <aside class="dashboard-sidebar">
-        <div class="dashboard-sidebar__user">
-            <div class="dashboard-sidebar__user-name">Valued Member</div>
-            <div class="dashboard-sidebar__user-tier">Premium Tier</div>
+  <!-- SideNavBar (Account) -->
+  <aside class="dashboard-sidebar">
+    <div class="dashboard-sidebar__user">
+      <div class="dashboard-sidebar__user-name">Valued Member</div>
+      <div class="dashboard-sidebar__user-tier">Premium Tier</div>
+    </div>
+    <nav class="dashboard-nav">
+      <a href="#dashboard" class="sidebar-link">
+        <span class="material-symbols-outlined">dashboard</span> Account Overview
+      </a>
+      <a href="#my-orders" class="sidebar-link">
+        <span class="material-symbols-outlined">package_2</span> My Orders
+      </a>
+      <a href="#payment-methods" class="sidebar-link active">
+        <span class="material-symbols-outlined">payments</span> Payment Methods
+      </a>
+      <a href="#account-security" class="sidebar-link">
+        <span class="material-symbols-outlined">shield</span> Security
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Canvas -->
+  <main class="dashboard-content pm-content">
+    <header class="pm-header">
+      <h1 class="pm-header__title">Payment Methods</h1>
+      <p class="pm-header__desc">Securely manage your saved cards and transaction preferences.</p>
+    </header>
+
+    <!-- Saved Cards Section -->
+    <section class="pm-section">
+      <div class="pm-section__header">
+        <h2 class="pm-section__title">Saved Cards</h2>
+        <span class="pm-section__badge">2 Cards Registered</span>
+      </div>
+
+      <div class="cc-grid">
+        <div class="cc-card primary-cc">
+          <div class="cc-flare"></div>
+          <div class="cc-card__content">
+            <div class="cc-card__top">
+              <div class="cc-card__brand">
+                <span class="cc-card__label">Primary Method</span>
+                <span class="cc-card__name">VISA</span>
+              </div>
+              <span class="material-symbols-outlined cc-card__icon">contactless</span>
+            </div>
+            <div class="cc-card__middle">
+              <div class="cc-card__number">•••• •••• •••• 4242</div>
+            </div>
+            <div class="cc-card__bottom">
+              <div>
+                <div class="cc-card__meta-label">Card Holder</div>
+                <div class="cc-card__meta-val">JULIAN VERSTAPPEN</div>
+              </div>
+              <div class="cc-card__align-right">
+                <div class="cc-card__meta-label">Expires</div>
+                <div class="cc-card__meta-val">12/26</div>
+              </div>
+            </div>
+          </div>
+          <div class="cc-card__actions primary-actions">
+            <button class="cc-action-btn disabled">Default Card</button>
+            <button class="cc-action-btn remove">Remove</button>
+          </div>
         </div>
-        <nav class="dashboard-nav">
-            <a href="#dashboard" class="sidebar-link">
-                <span class="material-symbols-outlined">dashboard</span> Account Overview
-            </a>
-            <a href="#my-orders" class="sidebar-link">
-                <span class="material-symbols-outlined">package_2</span> My Orders
-            </a>
-            <a href="#payment-methods" class="sidebar-link active">
-                <span class="material-symbols-outlined">payments</span> Payment Methods
-            </a>
-            <a href="#account-security" class="sidebar-link">
-                <span class="material-symbols-outlined">shield</span> Security
-            </a>
-        </nav>
-    </aside>
 
-    <!-- Main Content Canvas -->
-    <main class="dashboard-content pm-content">
-        <header class="pm-header">
-            <h1 class="pm-header__title">Payment Methods</h1>
-            <p class="pm-header__desc">Securely manage your saved cards and transaction preferences.</p>
-        </header>
+        <div class="cc-card secondary-cc">
+          <div class="cc-card__content">
+            <div class="cc-card__top">
+              <div class="cc-card__brand">
+                <span class="cc-card__label">Secondary</span>
+                <span class="cc-card__name">Mastercard</span>
+              </div>
+              <span class="material-symbols-outlined cc-card__icon">payments</span>
+            </div>
+            <div class="cc-card__middle">
+              <div class="cc-card__number">•••• •••• •••• 8810</div>
+            </div>
+            <div class="cc-card__bottom">
+              <div>
+                <div class="cc-card__meta-label">Card Holder</div>
+                <div class="cc-card__meta-val">JULIAN VERSTAPPEN</div>
+              </div>
+              <div class="cc-card__align-right">
+                <div class="cc-card__meta-label">Expires</div>
+                <div class="cc-card__meta-val">09/25</div>
+              </div>
+            </div>
+          </div>
+          <div class="cc-card__actions secondary-actions">
+            <button class="cc-action-btn">Set as Default</button>
+            <button class="cc-action-btn remove">Remove</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Saved Cards Section -->
-        <section class="pm-section">
-            <div class="pm-section__header">
-                <h2 class="pm-section__title">Saved Cards</h2>
-                <span class="pm-section__badge">2 Cards Registered</span>
-            </div>
-            
-            <div class="cc-grid">
-                <!-- Premium Card 1 -->
-                <div class="cc-card primary-cc">
-                    <div class="cc-flare"></div>
-                    <div class="cc-card__content">
-                        <div class="cc-card__top">
-                            <div class="cc-card__brand">
-                                <span class="cc-card__label">Primary Method</span>
-                                <span class="cc-card__name">VISA</span>
-                            </div>
-                            <span class="material-symbols-outlined cc-card__icon">contactless</span>
-                        </div>
-                        <div class="cc-card__middle">
-                            <div class="cc-card__number">•••• •••• •••• 4242</div>
-                        </div>
-                        <div class="cc-card__bottom">
-                            <div>
-                                <div class="cc-card__meta-label">Card Holder</div>
-                                <div class="cc-card__meta-val">JULIAN VERSTAPPEN</div>
-                            </div>
-                            <div class="cc-card__align-right">
-                                <div class="cc-card__meta-label">Expires</div>
-                                <div class="cc-card__meta-val">12/26</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cc-card__actions primary-actions">
-                        <button class="cc-action-btn disabled">Default Card</button>
-                        <button class="cc-action-btn remove">Remove</button>
-                    </div>
-                </div>
+    <!-- Add New Method -->
+    <section class="pm-add-method">
+      <div class="pm-add-method__header">
+        <h2 class="pm-add-method__title">Add New Payment Method</h2>
+        <p class="pm-add-method__desc">Information is encrypted with bank-level security.</p>
+      </div>
 
-                <!-- Premium Card 2 -->
-                <div class="cc-card secondary-cc">
-                    <div class="cc-card__content">
-                        <div class="cc-card__top">
-                            <div class="cc-card__brand">
-                                <span class="cc-card__label">Secondary</span>
-                                <span class="cc-card__name">Mastercard</span>
-                            </div>
-                            <span class="material-symbols-outlined cc-card__icon">payments</span>
-                        </div>
-                        <div class="cc-card__middle">
-                            <div class="cc-card__number">•••• •••• •••• 8810</div>
-                        </div>
-                        <div class="cc-card__bottom">
-                            <div>
-                                <div class="cc-card__meta-label">Card Holder</div>
-                                <div class="cc-card__meta-val">JULIAN VERSTAPPEN</div>
-                            </div>
-                            <div class="cc-card__align-right">
-                                <div class="cc-card__meta-label">Expires</div>
-                                <div class="cc-card__meta-val">09/25</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cc-card__actions secondary-actions">
-                        <button class="cc-action-btn">Set as Default</button>
-                        <button class="cc-action-btn remove">Remove</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <form class="pm-form">
+        <div class="pm-form__group">
+          <label>Cardholder Name</label>
+          <input type="text" class="input-cc" placeholder="e.g. JULIAN VERSTAPPEN">
+        </div>
+        <div class="pm-form__group">
+          <label>Card Number</label>
+          <div class="input-wrapper">
+            <input type="text" class="input-cc tracking-widest" placeholder="0000 0000 0000 0000">
+            <span class="material-symbols-outlined input-icon">credit_card</span>
+          </div>
+        </div>
+        <div class="pm-form__group">
+          <label>Expiry Date</label>
+          <input type="text" class="input-cc" placeholder="MM / YY">
+        </div>
+        <div class="pm-form__group">
+          <label>CVV</label>
+          <div class="input-wrapper">
+            <input type="password" class="input-cc" placeholder="***">
+            <span class="material-symbols-outlined input-icon">help</span>
+          </div>
+        </div>
+        <div class="pm-form__submit">
+          <button class="btn-primary w-full p-large rounded-xl">
+            Save Card Information
+          </button>
+        </div>
+      </form>
+    </section>
 
-        <!-- Add New Method -->
-        <section class="pm-add-method">
-            <div class="pm-add-method__header">
-                <h2 class="pm-add-method__title">Add New Payment Method</h2>
-                <p class="pm-add-method__desc">Information is encrypted with bank-level security.</p>
-            </div>
-            
-            <form class="pm-form">
-                <div class="pm-form__group">
-                    <label>Cardholder Name</label>
-                    <input type="text" class="input-cc" placeholder="e.g. JULIAN VERSTAPPEN">
-                </div>
-                <div class="pm-form__group">
-                    <label>Card Number</label>
-                    <div class="input-wrapper">
-                        <input type="text" class="input-cc tracking-widest" placeholder="0000 0000 0000 0000">
-                        <span class="material-symbols-outlined input-icon">credit_card</span>
-                    </div>
-                </div>
-                <div class="pm-form__group">
-                    <label>Expiry Date</label>
-                    <input type="text" class="input-cc" placeholder="MM / YY">
-                </div>
-                <div class="pm-form__group">
-                    <label>CVV</label>
-                    <div class="input-wrapper">
-                        <input type="password" class="input-cc" placeholder="***">
-                        <span class="material-symbols-outlined input-icon">help</span>
-                    </div>
-                </div>
-                <div class="pm-form__submit">
-                    <button class="btn-primary w-full p-large rounded-xl">
-                        Save Card Information
-                    </button>
-                </div>
-            </form>
-        </section>
-
-        <!-- Security Footer -->
-        <footer class="pm-security-footer">
-            <div class="security-item">
-                <span class="material-symbols-outlined security-icon">lock</span>
-                <div class="security-info">
-                    <strong>SSL Encrypted</strong>
-                    <span>Secure connection</span>
-                </div>
-            </div>
-            <div class="security-item">
-                <span class="material-symbols-outlined security-icon">verified_user</span>
-                <div class="security-info">
-                    <strong>PCI Compliant</strong>
-                    <span>Industry standard</span>
-                </div>
-            </div>
-            <div class="security-item">
-                <span class="material-symbols-outlined security-icon">shield_with_heart</span>
-                <div class="security-info">
-                    <strong>Fraud Protection</strong>
-                    <span>24/7 Monitoring</span>
-                </div>
-            </div>
-        </footer>
-    </main>
+    <!-- Security Footer -->
+    <footer class="pm-security-footer">
+      <div class="security-item">
+        <span class="material-symbols-outlined security-icon">lock</span>
+        <div class="security-info">
+          <strong>SSL Encrypted</strong>
+          <span>Secure connection</span>
+        </div>
+      </div>
+      <div class="security-item">
+        <span class="material-symbols-outlined security-icon">verified_user</span>
+        <div class="security-info">
+          <strong>PCI Compliant</strong>
+          <span>Industry standard</span>
+        </div>
+      </div>
+      <div class="security-item">
+        <span class="material-symbols-outlined security-icon">shield_with_heart</span>
+        <div class="security-info">
+          <strong>Fraud Protection</strong>
+          <span>24/7 Monitoring</span>
+        </div>
+      </div>
+    </footer>
+  </main>
 </div>

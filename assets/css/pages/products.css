@@ -1,259 +1,271 @@
-/* PAGE: PRODUCTS */
 .pt-main {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
-    .pt-main { padding-top: 6rem; padding-bottom: 6rem; }
+  .pt-main {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .products-layout {
-    flex-direction: column;
-    gap: 3rem;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 @media (min-width: 1024px) {
-    .products-layout { flex-direction: row; }
+  .products-layout {
+    flex-direction: row;
+  }
 }
 
 .products-sidebar {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
-    .products-sidebar { width: 250px; }
+  .products-sidebar {
+    width: 250px;
+  }
 }
 
 .filter-group {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .filter-group h3 {
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 .custom-checkbox {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .custom-checkbox input {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
-    cursor: pointer;
-    accent-color: var(--secondary);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+  accent-color: var(--secondary);
 }
 
 .custom-checkbox span {
-    font-size: 0.875rem;
-    color: var(--on-surface-variant);
-    transition: color 0.2s;
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  transition: color 0.2s;
 }
 
 .custom-checkbox:hover span {
-    color: var(--on-surface);
+  color: var(--on-surface);
 }
 
 .range-slider {
-    width: 100%;
-    height: 4px;
-    background: var(--surface-container-highest);
-    border-radius: 4px;
-    outline: none;
-    accent-color: var(--secondary);
-    cursor: pointer;
+  width: 100%;
+  height: 4px;
+  background: var(--surface-container-highest);
+  border-radius: 4px;
+  outline: none;
+  accent-color: var(--secondary);
+  cursor: pointer;
 }
 
 .range-labels {
-    margin-top: 1rem;
-    font-size: 0.75rem;
-    color: var(--on-surface-variant);
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
 }
 
 .color-swatches {
-    gap: 0.75rem;
-    flex-wrap: wrap;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .swatch {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    transition: all 0.2s;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.2s;
 }
 
 .swatch:hover {
-    border-color: var(--outline);
-    transform: scale(1.1);
+  border-color: var(--outline);
+  transform: scale(1.1);
 }
 
 .products-main {
-    flex: 1;
+  flex: 1;
 }
 
 .products-topbar {
-    margin-bottom: 2.5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 @media (min-width: 640px) {
-    .products-topbar {
-        flex-direction: row;
-        align-items: center;
-    }
+  .products-topbar {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .products-topbar p {
-    font-size: 0.875rem;
-    color: var(--on-surface-variant);
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
 }
 
 .sort-dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .custom-select {
-    appearance: none;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid var(--outline-variant);
-    padding: 0.5rem 2rem 0.5rem 0;
-    font-family: inherit;
-    font-size: 0.875rem;
-    color: var(--on-surface);
-    cursor: pointer;
-    transition: border-color 0.2s;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--outline-variant);
+  padding: 0.5rem 2rem 0.5rem 0;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--on-surface);
+  cursor: pointer;
+  transition: border-color 0.2s;
 }
 
 .custom-select:focus {
-    outline: none;
-    border-color: var(--secondary);
+  outline: none;
+  border-color: var(--secondary);
 }
 
 .sort-dropdown .material-symbols-outlined {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    font-size: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.25rem;
 }
 
 .products-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem 1.5rem;
 }
 
 @media (min-width: 640px) {
-    .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
-    .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(2, 8, 19, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s;
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 8, 19, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .product-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: transform var(--transition-base), box-shadow var(--transition-base);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-    background: var(--surface-container-lowest);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  background: var(--surface-container-lowest);
 }
 
 .product-card:hover .card-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card-overlay .btn-primary {
-    width: auto;
-    transform: translateY(1rem);
-    transition: transform 0.3s;
+  width: auto;
+  transform: translateY(1rem);
+  transition: transform 0.3s;
 }
 
 .product-card:hover .card-overlay .btn-primary {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .pagination {
-    margin-top: 6rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  margin-top: 6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .page-btn {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
 }
 
 .page-btn:hover:not(.disabled) {
-    background-color: var(--surface-container);
+  background-color: var(--surface-container);
 }
 
 .page-btn.disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .page-numbers {
-    gap: 0.5rem;
-    align-items: center;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .page-num {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    font-weight: 500;
-    transition: background-color 0.2s;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-weight: 500;
+  transition: background-color 0.2s;
 }
 
 .page-num.active {
-    background-color: var(--primary);
-    color: var(--on-primary);
-    font-weight: 700;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  font-weight: 700;
 }
 
 .page-num:not(.active):hover {
-    background-color: var(--surface-container);
+  background-color: var(--surface-container);
 }
 
 .dots {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
