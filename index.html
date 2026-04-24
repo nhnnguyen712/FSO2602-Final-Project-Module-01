@@ -49,7 +49,7 @@
       <div class="nav-actions">
         <div class="search-bar">
           <span class="material-symbols-outlined icon">search</span>
-          <input type="text" class="input-field" placeholder="Search..." />
+          <input type="text" id="search-input" class="input-field" placeholder="Search..." />
         </div>
 
         <a href="#cart" class="icon-btn" title="Shopping Cart">
@@ -164,6 +164,17 @@
         document.body.style.overflow = '';
       });
     });
+
+    // Search Navigation Logic
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+      searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          window.location.hash = '#search-results';
+          searchInput.value = '';
+        }
+      });
+    }
   </script>
 </body>
 

@@ -7,6 +7,10 @@ const routes = {
     template: "./pages/home.html",
     title: "Home | Digital Atelier",
   },
+  collections: {
+    template: "./pages/home.html",
+    title: "Collections | Digital Atelier",
+  },
   products: {
     template: "./pages/products.html",
     title: "Products | Digital Atelier",
@@ -74,6 +78,10 @@ const routes = {
 };
 
 const handleLocation = async () => {
+  if (!window.location.hash || window.location.hash === "#") {
+    window.location.hash = "#login";
+    return;
+  }
   let path = window.location.hash.replace("#", "");
   const targetElement = document.getElementById(path);
   if (!routes[path] && targetElement) {
@@ -116,7 +124,13 @@ const handleLocation = async () => {
       if (footer) footer.style.display = "";
     }
 
-    if (isAnchorRoute && path !== "") {
+    // Handle scrolling to anchor after template is loaded
+    if (path === "collections") {
+      const collectionsSection = document.getElementById("collections");
+      if (collectionsSection) {
+        collectionsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (isAnchorRoute && path !== "") {
       const newTarget = document.getElementById(path);
       if (newTarget) {
         newTarget.scrollIntoView({ behavior: "smooth" });
